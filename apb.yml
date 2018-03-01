@@ -28,6 +28,12 @@ _p: &_p
     title: PostgreSQL Version
     required: true
     updatable: true
+  - name: postgresql_single_user
+    default: 'multiple'
+    enum: ['single', 'multiple']
+    type: enum
+    title: Single User or Multiple Users
+    required: true
 ################################################################################
 version: 1.0
 name: postgresql-apb
